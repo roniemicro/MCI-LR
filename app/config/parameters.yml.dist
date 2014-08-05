@@ -1,0 +1,24 @@
+parameters:
+    cassandra_host:     127.0.0.11
+    cassandra_port:     9160
+    cassandra_keyspace: mci
+    cassandra_columnfamily: locations
+    cassandra_columns:
+        - geo_code
+        - division_id
+        - division_name
+        - district_id
+        - district_name
+        - upazilla_id
+        - upazilla_name
+        - pourashava_id
+        - pourashava_name
+        - union_id
+        - union_name
+
+    locale:            en
+    secret:            ThisTokenIsNotSoSecretChangeIt
+
+    debug_toolbar:          true
+    debug_redirects:        false
+    use_assetic_controller: true

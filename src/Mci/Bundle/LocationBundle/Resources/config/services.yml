@@ -1,0 +1,8 @@
+parameters:
+#    mci_location.example.class: Mci\Bundle\LocationBundle\Example
+
+services:
+    service.importer.from_excel:
+        class: Mci\Bundle\LocationBundle\Importer\FromExcel
+        calls:
+            - [ setContainer,[ @service_container ] ]
