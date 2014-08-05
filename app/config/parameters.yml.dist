@@ -1,5 +1,5 @@
 parameters:
-    cassandra_host:     127.0.0.11
+    cassandra_host:     127.0.0.1
     cassandra_port:     9160
     cassandra_keyspace: mci
     cassandra_columnfamily: locations
