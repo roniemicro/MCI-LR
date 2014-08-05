@@ -9,8 +9,17 @@
     "require": {
         "php": ">=5.3.3",
         "symfony/symfony": "2.5.*",
+        "sensio/distribution-bundle": "~3.0",
         "evseevnn/php-cassandra-binary": "0.1.0",
         "liuggio/ExcelBundle": "2.0.1"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap"
+        ],
+        "post-update-cmd": [
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap"
+        ]
     },
     "config": {
         "bin-dir": "bin"
